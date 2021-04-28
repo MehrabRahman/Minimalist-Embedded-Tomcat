@@ -1,0 +1,15 @@
+plugins {
+    id 'application'
+    id 'com.github.johnrengelman.shadow' version '7.0.0'
+}
+
+mainClassName = 'com.revature.server.App'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.13.1'
+    implementation 'org.apache.tomcat.embed:tomcat-embed-core:10.0.5'
+}
